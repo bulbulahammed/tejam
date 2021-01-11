@@ -1,0 +1,39 @@
+/* -------------------------------------------------------
+                     Responsive 
+-------------------------------------------------------- */
+
+@media screen and (max-width: 991.99px) {
+
+	.expertise_2,
+	.expertise_4 {
+		border-right: none;
+	}
+
+	.expertise_3 {
+		border-right: 1px solid #ebebeb;
+	}
+
+	.expertise_4 {
+		border-bottom: 1px solid #ebebeb;
+	}
+
+	.single_team {
+		padding-top: 50px;
+	}
+
+	.contact_area {
+		padding-bottom: 50px;
+	}
+
+	.footer-logo-responsive {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 767.99px) {}
+
+@media screen and (max-width: 575.99px) {}
+
+/* -------------------------------------------------------
+                    Responsive 
+-------------------------------------------------------- */

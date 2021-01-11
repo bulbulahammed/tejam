@@ -1,0 +1,765 @@
+/*-----------------------------------------------------------------------------------
+
+Theme Name:Emily
+Description: Creative One Page Portfolio
+Author: themexposer
+Author URI:https://themeforest.net/user/themexposer
+Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+
+	== Table Of Content
+
+		01 - Global
+		02 - Navigition
+		03 - Header
+		04 - Hero
+		05 - Services
+		06 - Portfolio
+		07 - CounterUp
+		08 - Testimonial
+		09 - Blog
+		10 - Contact
+		
+---------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                    Global
+-------------------------------------------------------- */
+
+* {
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none !important;
+	list-style: none !important;
+	outline: none !important;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+span {
+	display: inline-block;
+}
+
+a,
+a:hover,
+a:focus {
+	color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+/* ----- Clear-fix & Buttons ----*/
+
+.clear-fix {
+	clear: both !important;
+}
+
+/*--------fonts css----------*/
+.title_font {
+	font-family: 'Playfair Display', serif;
+}
+
+.para_font {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.button_font {}
+
+.trans {
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+}
+
+/* -------------------------------------------------------
+                    Navigation CSS Start
+-------------------------------------------------------- */
+
+#menu {
+	position: fixed;
+	width: 100%;
+	top: 1px;
+	z-index: 999;
+}
+
+.custom_nav {
+	background-color: transparent;
+	margin-bottom: 0;
+	width: 100%;
+	position: relative;
+
+}
+
+#my_nav ul li a {
+	color: #f1f1f1;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	padding: 20px 20px;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+}
+
+#my_nav ul li a:hover {
+	color: #00e0d0;
+}
+
+#my_nav ul .active a {
+	color: #00e0d0;
+}
+
+.menu-bg {
+	background: rgba(0, 0, 0, 0.5);
+	position: relative;
+	;
+}
+
+
+.navbar-light .navbar-toggler {
+	color: #00e0d0;
+	border-color: #00e0d0;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-o-transition: .4s;
+}
+
+.navbar-light .navbar-toggler:hover {
+	color: #f1f1f1;
+	border-color: #f1f1f1;
+}
+
+
+.logo img {
+	width: 120px;
+}
+
+/* -------------------------------------------------------
+                    Navigation CSS End
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
+                    Banner Section css Start
+-------------------------------------------------------- */
+#banner {
+	background: url(../images/banner-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100vh;
+	width: auto;
+	z-index: 99;
+}
+
+.v-middle {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.banner_slider {}
+
+.banner_slider_single {}
+
+.banner_slider_single h2 {
+	font-size: 32px;
+	color: #ffff;
+	position: relative;
+	font-weight: bold;
+	padding-bottom: 30px;
+}
+
+.banner_slider_single h2:after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 1px;
+	background: #00e0d0;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+}
+
+.banner_slider_single p {
+	font-size: 14px;
+	color: #fff;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#banner:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(14, 9, 54, 0.7);
+	z-index: -1;
+}
+
+.carouse_button {
+	color: #00e0d0;
+	border: 1px solid #00e0d0;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+.banner_slider_single a:hover {
+	color: #fff;
+	background: #00e0d0;
+}
+
+/* -------------------------------------------------------
+                    Banner Section CSS End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                    Banner Section CSS End
+-------------------------------------------------------- */
+#story {}
+
+.section_padding {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.story-area {}
+
+.story-area h2 {}
+
+.story-area p {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.story-area a:hover {
+	color: #fff;
+	background: #00e0d0;
+}
+
+.clients_area_title,
+.form_area_title {
+	font-size: 22px;
+	padding-bottom: 34px;
+}
+
+.single_happy_client {
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+/* -------------------------------------------------------
+                	Story Section CSS End
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
+                    Banner Section CSS End
+-------------------------------------------------------- */
+#video {
+	background: url(../images/video-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	z-index: 99;
+}
+
+#video:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(14, 9, 54, 0.7);
+	z-index: -1;
+}
+
+#video a {
+	color: #fff;
+}
+
+#video i {
+	font-size: 60px;
+	padding-top: 130px;
+}
+
+#video i:hover {
+	color: #00e0d0;
+}
+
+#video h6 {
+	font-size: 16px;
+	padding-top: 34px;
+	padding-bottom: 130px;
+}
+
+/* -------------------------------------------------------
+                    Banner Section CSS End
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
+                    Expertise Section CSS Start
+-------------------------------------------------------- */
+#expertise {}
+
+.expertise_title_area {
+	margin-bottom: 50px;
+}
+
+.section_title {}
+
+.section_title h2 {}
+
+.section_title p {
+	position: relative;
+}
+
+.section_title p:after {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 2px;
+	background: #c6c4c9;
+	top: 30px;
+	left: 45%;
+}
+
+.expertise_area {}
+
+.single_expertise {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.single_expertise img {
+	width: 50px;
+	height: 50px;
+	padding-bottom: 10px;
+}
+
+.single_expertise h5 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.single_expertise p {}
+
+.expertise_1,
+.expertise_2,
+.expertise_3 {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.expertise_1,
+.expertise_2,
+.expertise_4,
+.expertise_5 {
+	border-right: 1px solid #ebebeb;
+}
+
+/* -------------------------------------------------------
+                    Expertise Section CSS End
+-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------
+                    Team Section CSS End
+-------------------------------------------------------- */
+#team {
+	background: url(../images/team-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	z-index: 999;
+	background-attachment: fixed;
+	color: #fff;
+	position: relative;
+	z-index: 99;
+
+}
+
+#team:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(14, 9, 54, 0.7);
+	z-index: -1;
+}
+
+.card {
+	background: transparent;
+	border: 1px solid #7c7990;
+	border-radius: 0%;
+	text-align: center;
+}
+
+/* -------------------------------------------------------
+                    Team Section CSS End
+-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------
+                    Work Section CSS End
+-------------------------------------------------------- */
+#works {}
+
+.work_top_area {
+	margin: 0;
+	padding: 0;
+}
+
+.work_top_area h5 {}
+
+.work_top_area a {
+	cursor: ;
+}
+
+.single_work {
+	padding: 0;
+}
+
+/* -------------------------------------------------------
+                    Work Section CSS End
+-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------
+                    Testimonial Section CSS Start
+-------------------------------------------------------- */
+#testimonial {
+	background: url(../images/testimonial-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	position: relative;
+	z-index: 99;
+}
+
+#testimonial:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(14, 9, 54, 0.7);
+	z-index: -1;
+}
+
+.testimonial_text {}
+
+.client_info {}
+
+.client_info i {
+	font-size: 100px;
+}
+
+.client_info p {
+	padding: 45px;
+	padding-bottom: 50px;
+}
+
+.client_info h2 {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 14px;
+}
+
+.client_info h3 {
+	font-size: 14px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+.client_photo {}
+
+.client_photo img {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	transition: all linear 0.3s;
+	-webkit-transition: all linear 0.3s;
+	-moz-transition: all linear 0.3s;
+	-ms-transition: all linear 0.3s;
+	-o-transition: all linear 0.3s;
+	border-radius: 50%;
+	transform: scale(1.0);
+
+}
+
+.client_photo.slick-slide.slick-current.slick-active.slick-center img {
+	transform: scale(1.8);
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.work_button {
+	color: #00e0d0;
+	border: 1px solid #00e0d0;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+
+.work_button:hover {
+	color: #fff;
+	background: #00e0d0;
+}
+
+/* -------------------------------------------------------
+                    Testimonial Section CSS End
+-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------
+                    Testimonial Section CSS End
+-------------------------------------------------------- */
+#contact {}
+
+.contact_area {}
+
+.happy_clients {}
+
+.contact_button {
+	color: #00e0d0;
+	border: 1px solid #00e0d0;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	background: #fff;
+}
+
+.contact_button:hover {
+	color: #fff;
+	background: #00e0d0;
+}
+
+.form-control:focus {
+	border-color: #e5e5e5;
+	outline: 0;
+	box-shadow: none;
+}
+
+.form-control {
+	height: 45px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 0;
+}
+
+.message_box {
+	height: 250px;
+}
+
+/* -------------------------------------------------------
+                    Testimonial Section CSS End
+-------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------
+                   scroll top button css Start
+-------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------
+                   scroll top button css Start
+-------------------------------------------------------- */
+#footer {
+	color: #fff;
+}
+
+.footer {
+	background: url(../images/footer_bg.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+}
+
+.footer_logo {}
+
+.footer_left_text {
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+
+.footer_left_link {
+	padding-top: 25px;
+}
+
+.footer_left_link a {
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.footer_middle {}
+
+.footer_middle h6 {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 14px;
+}
+
+.footer_middle_text {}
+
+.footer_middle_text p {}
+
+.footer_middle_address {
+	padding-top: 24px;
+}
+
+.footer_middle_address span {
+	font-size: 180px;
+}
+
+.footer_middle_phone {
+	padding-top: 24px;
+}
+
+.footer_middle_phone span {
+	font-size: 18px;
+}
+
+.footer_middle_text i {
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+.footer_right {}
+
+.footer_right h6 {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 14px;
+	padding-bottom: 40px;
+}
+
+.footer_right_subscribe {}
+
+.footer_right_subscribe input {
+	width: 100%;
+	height: 45px;
+}
+
+.footer_right_subscribe .email input {
+	background: transparent;
+	border: 1px solid #9b93ad;
+}
+
+.subscribe_button {
+	width: 70px;
+	height: 45px;
+	line-height: 45px;
+	;
+	color: #000;
+	background: #a099b3;
+}
+
+.footer_right_subscribe a {
+	font-size: 30px;
+}
+
+.footer_social_link {
+	padding-top: 27px;
+}
+
+.footer_social_link i {
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.footer_social_link i:hover {
+	background: #00e0d0;
+}
+
+.footer_copywrite {
+	padding-top: 70px;
+}
+
+.footer:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(14, 9, 54, 0.8);
+	z-index: -1;
+}
+
+.footer {}
+
+
+
+/* -------------------------------------------------------
+                   scroll top button css Start
+-------------------------------------------------------- */
+.scroll-top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 999;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+/* -------------------------------------------------------
+                     scroll top button css End
+-------------------------------------------------------- */
